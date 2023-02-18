@@ -1,114 +1,53 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <title>Ejercicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS de Bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-TMPwDf+yoArulxjKQ2G0yJ+0v/rX9OsUVF4K4hBZ0NtR96C+xBNEMJb5OeNzO5Q" crossorigin="anonymous">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>I'M MAKING A FORK</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+<!-- JS de Bootstrap (requerido por algunos componentes de Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-FAuTmlHMsy7V25g6N8U6c69J6izKKZPGV/2bO+P7xpfDfnwG1KlJ2zS8exuk+vgE" crossorigin="anonymous"></script>
+
+<!-- Dependencias de JS de Bootstrap (requeridas por algunos componentes de Bootstrap) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-PoV/S4igKjVCgQ4+uFSTGTkARxBjK33eX9TJ3VTq+HfV7l/m+atFyWkDj3qtkjhH" crossorigin="anonymous"></script>
+
+  </head>
   <body>
-    <header>
-		  <div class="contenedor">
-  			<div class="logo">
-  				<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhtml.com%2Fattributes%2Fimg-src%2F&psig=AOvVaw3TbyfqFpNO42-ZSHYYDjRp&ust=1675496625412000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIjprL3t-PwCFQAAAAAdAAAAABAD" alt="">
-  			</div>
-  			<nav class="menu">
-  				<ul>
-  					<li class = "Inicio"><a href="#Inicio">Inicio</a></li>
-  					<li class = "Portfolio"><a href="#Portfolio">Portfolio</a></li>
-  					<li class = "Contacto"><a href="#Contacto">Contacto</a></li>
-  				</ul>
-  			</nav>
-  		</div>
-	  </header>
-    <section id="Inicio">
-      <h2>INICIO</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus suscipit eros ut convallis erat, ullamcorper dictumst et dui euismod class ultricies placerat vitae, senectus eleifend montes lectus sodales felis tempor augue. Varius dictum integer sociosqu ac condimentum habitasse, faucibus enim urna odio.
-        <br><br>
-        <label>
-            EDAD:
-            <input type = "text" name = "Nombre" size = "30" maxlength="30" required pattern ="[0-9]{3}">
-            <input type = "submit">
-        </label>
-            
-      </p>
-      <p>Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus suscipit eros ut convallis erat, ullamcorper dictumst et dui euismod class ultricies placerat vitae, senectus eleifend montes lectus sodales felis tempor augue. Varius dictum integer sociosqu ac condimentum habitasse, faucibus enim urna odio.        
-      </p>
-      <figure>
-        <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        alt="Elephant at sunset">
-        <figcaption>LOGO GOOGLE</figcaption>
-      </figure>
-    </section>
-
-    <section id="Portfolio">
-      <h2>PORTFOLIO</h2>
-      <label>
-        <p class = "Subtitulo">Lorem ipsum:</p>
-        <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        width="50"
-        height="15">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus suscipit eros ut convallis erat.
-      </label>
-      <label>
-        <p class = "Subtitulo">Lorem ipsum2:</p>
-        <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        width="50"
-        height="15">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus suscipit eros ut convallis erat.
-      </label>
-      <label>
-        <p class = "Subtitulo">Lorem ipsum3:</p>
-        <img src="https://www.google.es/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-        width="50"
-        height="15">
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit auctor, nostra habitasse nulla faucibus dignissim cras curabitur aliquet, duis placerat hendrerit metus sollicitudin tortor lectus. Aliquam vestibulum ad fames cursus suscipit eros ut convallis erat.
-      </label>
-    </section>
-  
-    <section id="Contacto">
-      <h2>CONTACTO</h2>
-      <form ACTION="mailto:a25593@svalero.com" METHOD="POST" ENCTYPE="text/plain">
-        <fieldset>
-          <label>
-            NOMBRE:
-            <input type = "text" name = "Nombre" size = "30" maxlength="30" required>
-          </label>
-          <br><br>
-          <label>
-            EDAD:
-            <input type = "text" name = "Nombre" size = "30" maxlength="30" required>
-          </label>
-          <br><br>
-          <label>
-            EMAIL:
-            <input type = "text" name = "Nombre" size = "30" maxlength="30" required>
-          </label>
-          <br><br>
-          <label>
-            MENSAJE:
-            <input type = "text" name = "Nombre" size = "30" maxlength="200">
-          </label>
-          <br><br>
-          <label>
-            ACEPTO LAS CONDICIONES DE USO:
-            <input type = "checkbox" name = "Condiciones" value = "Yes" checked required>
-          </label>
-          <br><br>
-          <label>
-            <input type = "Submit" value = "ENVIAR">
-            <input type = "Reset" value = "BORRAR">
-          </label>
-        </fieldset>
-      </form>
-    </section>
-    <footer>
-        <p>© Daniel Real Marin / Aplicaciones Web / HTML&CSS</p>
-    </footer>
-    
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+      <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              Bootstrap
+            </a>
+          </div>
+        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Formulario de contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+           
   </body>
 </html>
