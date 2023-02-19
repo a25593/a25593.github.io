@@ -17,6 +17,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+
   </head>
   <body>
     <!-- INICIO NAVBAR -->
@@ -61,7 +63,9 @@
     <div id="carouselExampleCaptions" class="carousel slide">
       <section id="portfolio" class="portfolio-section">
         <div class="container">
-          <h2 align = "center" class="portfolio-heading">Portfolio</h2>
+          <div class="card-header" align = "center">
+            PORTFOLIO
+          </div>
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -111,9 +115,57 @@
       <div class="card-body">
         <h5 class="card-title">SOBRE NOSOTROS</h5>
         <p class="card-text">Para contactar con nosotros dirígete aquí</p>
-        <a href="#" class="btn btn-primary">CONTÁCTANOS AQUÍ</a>
+        <a href="#FORMULARIO" class="btn btn-primary">CONTÁCTANOS AQUÍ</a>
       </div>
     </div>
     <!-- FINAL ACERCA DE -->
+
+    <div class="card-header" id="FORMULARIO" align="center">
+      FORMULARIO
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto d-flex align-items-center">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre completo" required>
+            </div>
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="correo" placeholder="Escribe tu correo electrónico" required pattern="^[a-z0-9._%+-]+@(gmail|hotmail|outlook)\.com$">
+              <div class="form-text">Introduce un correo válido de Gmail, Hotmail o Outlook.</div>
+            </div>
+            <div class="mb-3">
+              <label for="ciudad" class="form-label">Ciudad</label>
+              <select class="form-select" id="ciudad">
+                <option selected disabled value="">Selecciona tu ciudad</option>
+                <option>Madrid</option>
+                <option>Barcelona</option>
+                <option>Valencia</option>
+                <option>Sevilla</option>
+                <option>Zaragoza</option>
+                <option>Bilbao</option>
+                <option>Málaga</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="edad" class="form-label">Edad</label>
+              <input type="number" class="form-control" id="edad" placeholder="Escribe tu edad" required min="18" max="99">
+            </div>
+            <div class="mb-3 form-check text-center">
+              <input type="checkbox" class="form-check-input" id="terminos" required>
+              <label class="form-check-label" for="terminos" required>Acepto los términos y condiciones y la política de privacidad</label>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- FINAL FORMULARIO -->
+    
+    
   </body>
 </html>
